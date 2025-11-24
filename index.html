@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wortschatztraining Web-App</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffffff">
+<style>
+body { font-family: Arial; padding:20px; margin:0; }
+@media (prefers-color-scheme: dark){
+  body { background:#111; color:#eee; }
+  button,input,select { background:#222; color:#eee; border-color:#555; }
+}
+button,input,select { font-size:1rem; padding:8px; margin:5px 0; }
+.hidden{display:none;}
+</style>
+</head>
+<body>
+<h1>Wortschatztraining</h1>
+<p>Modus wählen:</p>
+<select id="modeSelect">
+ <option value="kinder">Kinder-Version</option>
+ <option value="profi">Gymi-Profi-Version</option>
+</select>
+
+<button id="newQuestion">Neue Frage</button>
+<div id="question"></div>
+<div id="answers"></div>
+<div id="feedback"></div>
+
+<button id="speakBtn">🔊 Vorlesen</button>
+
+<script src="app.js"></script>
+</body>
+</html>
